@@ -1,0 +1,122 @@
+
+.clients {
+    text-align: center;
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(50, 50, 100, 1);
+        margin-bottom: 30px;
+    }
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 10vh;
+    }
+    &__card:nth-child(1) {
+        background: rgba(28, 66, 128, 1);
+    }
+    &__card:nth-child(2) {
+        background:  rgba(20, 54, 70, 1);
+    }
+    &__card:nth-child(3) {
+        background:  rgba(244, 139, 48, 1);
+    }
+    &__card:nth-child(4) {
+        background:  rgba(158, 77, 195, 1);
+    }
+    &__card:nth-child(5) {
+        background:  rgba(220, 243, 249, 1);
+    }
+    &__card:nth-child(6) {
+        background:  rgba(199, 28, 54, 1);
+    }
+    &__card:nth-child(7) {
+        background:  rgba(253, 147, 57, 1);
+    }
+    &__card:nth-child(8) {
+        background:  rgba(234, 234, 234, 1);
+    }
+    &__card:nth-child(9) {
+        background:  rgba(0, 0, 0, 1);
+    }
+    &__card:nth-child(10) {
+        background:  rgba(29, 69, 104, 1);
+    }
+    &__card:nth-child(11) {
+        background:  rgba(40, 34, 64, 1);
+    }
+    &__card:nth-child(12) {
+        background:  rgba(226, 226, 228, 1);
+    }
+   
+    &__img {
+        width: fit-content;
+        max-width: 80%;
+        max-height: 75%;
+    }
+}
+@media (min-width: $screenWidth) {
+    .clients {
+        &__container {
+            width: 100vw;
+        }
+        &__title {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-bottom: 3vh;
+        }
+        &__card {
+            width: 25vw;
+            height: 12vh;
+        }
+        &__img {
+            width: 10vw;
+            max-width: none;
+            max-height: 90%;
+        }
+        &__card:nth-child(1) {
+            order: 1;
+        }
+        &__card:nth-child(2) {
+            order: 2;
+        }
+        &__card:nth-child(3) {
+            order: 3;
+        }
+        &__card:nth-child(4) {
+            order: 4;
+        }
+        &__card:nth-child(5) {
+            order: 8;
+        }
+        &__card:nth-child(6) {
+            order: 7;
+        }
+        &__card:nth-child(7) {
+            order: 5;
+        }
+        &__card:nth-child(8) {
+            order: 9;
+        }
+        &__card:nth-child(9) {
+            order: 12;
+        }
+        &__card:nth-child(10) {
+            order: 11;
+        }
+        &__card:nth-child(11) {
+            order: 10;
+        }
+        &__card:nth-child(12) {
+            order: 6;
+        }
+    }
+}

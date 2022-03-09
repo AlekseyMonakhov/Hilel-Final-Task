@@ -1,0 +1,107 @@
+.experience {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 45px;
+    &__links {
+        margin-bottom: 10px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:not(:first-child){
+            display: none;
+        }
+    }
+    &__descriptions {
+        margin-bottom: 20px;
+        
+    }
+    &__description {
+        &:not(:nth-child(1)) {
+            display: none;
+        }
+        h2 {
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+    }
+}
+@media (min-width: $screenWidth) {
+    .experience {
+        padding: 80px 60px;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 0;
+        &__links {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+            margin: 0;
+
+        }
+        .experience__link {
+            display: block;
+            -webkit-text-fill-color: #B3B3BA;
+            font-size: 3rem;
+            cursor: pointer;
+            line-height: 4rem;
+            padding: 0.5rem 2rem 0 0;
+            text-transform: none;
+            border-right: 4px solid #B3B3BA;
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+            &:hover {
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &__descriptions {
+            padding: 5vh 0 0 3vw;
+            margin: 0;
+            overflow: hidden;
+            max-width: 50vw;
+            height: 40vh;
+        }
+        .experience__description {
+            display: block;
+            transform: translateX(-100%);
+            transition: 0.5s ease-in-out;
+            height: 0;
+            opacity: 0;
+            h2 {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+        .switch {
+            display: none;
+        }
+        .experience__description.active-some {
+            transform: translateX(0);
+            opacity: 1;
+            height: auto;
+
+        }
+        .experience__link.active-some {
+            -webkit-text-fill-color: transparent;
+            border-color: #F0145A;
+        }
+    }
+}
+

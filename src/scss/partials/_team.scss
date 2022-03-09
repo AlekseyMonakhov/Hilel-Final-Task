@@ -1,0 +1,100 @@
+.team {
+    padding: 20px;
+    &__content {
+        display: flex;
+        position: relative;
+        flex-flow: column;
+        row-gap: 20px;
+        padding: 20px 10px 20px 20px;
+        background: #F5F5FA;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+        &::after {
+            @include descriptionAfter (#24A3FF)
+        }
+    }
+    &__heading {
+        font-size: 32px;
+        line-height: 38px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+       
+    &__employee {
+        position: absolute;
+        bottom: 20px;
+        left: 100px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #B3B3BA;
+        align-self: center;
+    }
+}
+.switch {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+   
+    > span {
+        width: 16px;
+        height: 16px;
+        background: #24A3FF;
+        border-radius: 50%;
+        opacity: 0.2;
+    }
+    >.switch--active {
+        opacity: 1;
+    }
+}
+@media (min-width: $screenWidth) {
+    .team {
+        padding: 40px 60px;
+        &__content {
+            padding: 0;
+            flex-flow: row-reverse;
+        }
+        &__img {
+            width: fit-content;
+            height: fit-content;
+            min-width: 30%;
+            border-radius: unset;
+        }
+        &__heading {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-bottom: 5vh;
+        }
+        &__description {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+        &__employee {
+            position: static;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+        &__description__container {
+            padding: 40px;
+        }
+    }
+}

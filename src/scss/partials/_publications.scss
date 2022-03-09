@@ -1,0 +1,194 @@
+
+.publications {
+    padding: 20px 20px 40px;
+    background: #F5F5FA;
+    &__description {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            border-right: 2px solid #24A3FF;
+            border-bottom: 2px solid #24A3FF;
+            transform: rotate(-45deg) translate(5px, 2px);
+            }
+        }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__cards {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 20px;
+        .publications__card {
+            background: #FFFFFF;
+            border-radius: 8px;
+            width: 100%;
+            padding-bottom: 20px;
+            &__title {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                color: #24A3FF;
+                padding: 20px 20px 10px;
+            }
+            &__time {
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #B3B3BA;
+                padding-left: 20px;
+            }
+            &__img {
+                width: inherit;
+                max-width: 100%;
+            }
+            hr, &__description {
+                display: none;
+            }
+            &:nth-child(3), &:nth-child(5), &:nth-child(6) {
+                display: none;
+            }
+        }
+    }
+    &__container {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+    .btn__container {
+        text-align: center;
+        margin-top: 20px;
+        .btn {
+            width: 250px;
+            background: #24A3FF;
+            box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 15px;
+        }
+    }
+}
+@media (min-width: $screenWidth) {
+    .publications {
+        padding: 2vh 2vw 0;
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        &__description {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            &::after {
+                height: 0.4rem;
+                width: 0.4rem;
+                transform: translateY(-25%) rotate(-45degs);
+            }
+        }
+        &__cards {
+            flex-flow: column wrap;
+            gap: 4vh;
+            height: 135vh;
+            min-height: calc(100vh + 300px);
+            .publications__card {
+                width: 30%;
+                padding-bottom: 0;
+                hr, &__description {
+                    display: block;
+                }
+                &:nth-child(3), &:nth-child(5), &:nth-child(6) {
+                    display: block;
+                }
+                &__title {
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                }
+                &__time {
+                    font-size: 0.7rem;
+                    line-height: 1rem;
+                }
+                &__description {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    line-height: 1.2rem;
+                    color: #000000;
+                    padding: 0 20px 20px;
+                }
+                &__img {
+                    width: 100%;
+                }
+                hr {
+                    width: calc(100% - 40px);
+                    margin: 20px auto;
+                }
+            }   
+        }
+        &__container {
+            height: 95vh;
+            overflow: hidden;
+            position: relative;
+            gap: 2vh;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                display: block;
+                height: 20%;
+                width: 100%;
+                background: 
+                linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, 
+                #F5F5FA 86.5%);
+
+            }
+        }
+        .btn__container {
+            position: absolute;
+            left: calc(50% - 10vw);
+            bottom: 4vh;
+            z-index: 1;
+            margin-top: 0;
+            .btn {
+                width: 20vw;
+                border-radius: 1rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 1.5vh;
+            }
+        }
+        &__cards {
+            & :nth-child(1) {
+                order: -5;
+            } 
+            & :nth-child(4) {
+                order: -4;
+            }
+            & :nth-child(2) {
+                order: -3;
+            }
+            & :nth-child(5) {
+                order: -2;
+            }
+        }
+    }
+}

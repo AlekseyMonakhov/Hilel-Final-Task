@@ -1,0 +1,122 @@
+.footer {
+    &__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 20px;
+    border-top: 4px solid #E6E6F0;
+    padding: 20px 20px 15vh;
+    width: 95%;
+    margin: 0 auto;
+    }
+    a {
+        text-decoration: none;
+    }
+    &__adress__container {
+        text-align: center;
+    }
+    &__adress {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #323264;
+        margin-bottom: 10px;
+    }
+    &__adress__link {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        row-gap: 20px;
+    }
+    &__facebook__img {
+        width: fit-content;
+        height: fit-content;
+    }
+    &__tel {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #46466E;
+    }
+    &__mail {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #24A3FF;
+    }
+    .company__name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #B3B3BA;
+        text-align: center;
+    }
+}
+@media (min-width: $screenWidth) {
+    .footer {
+        &__container {
+            min-height: 15vh;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            row-gap: 1vh;
+            padding: 2.5vh;
+        }
+        &__adress__container, &__contacts {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 70%;
+            gap: 2.5vw;
+            align-items: center;
+        }
+        &__adress__container {
+            order: -5;
+        }
+        &__adress {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            &__link {
+                font-size: 0.8rem;
+                line-height: 1rem;
+            }
+        }
+        &__contacts {
+            order: 1;
+        }
+        .company__name {
+            flex-basis: 30%;
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+        &__facebook__img {
+            width: 2rem;
+        }
+        &__tel, &__mail {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        &__tel::before {
+            @include phoneBeforeAfter (right, #B3B3BA);
+        }
+        &__adress__link::before {
+            @include phoneBeforeAfter (right, #B3B3BA);
+        }
+        &__mail::before {
+            @include phoneBeforeAfter (right, #B3B3BA);
+        }
+
+    }
+}

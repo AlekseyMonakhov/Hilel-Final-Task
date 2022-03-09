@@ -1,0 +1,21 @@
+{
+  "name": "homework",
+  "version": "1.0.1",
+  "description": "Final home task",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "keywords": [
+    "best",
+    "project"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {}
+}

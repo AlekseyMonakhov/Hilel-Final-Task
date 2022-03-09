@@ -1,0 +1,40 @@
+$screenWidth: 800px;
+@mixin phoneBeforeAfter($marginDirection, $background-color) {
+    content: "";
+    display: inline-block;
+    background-color: $background-color;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    margin-#{$marginDirection}: 1vw;
+    transform: translate(0px, -40%);
+}
+@mixin descriptionAfter ($border-color) {
+    content: "";
+    display: inline-block;
+    height: 0.4rem;    
+    width: 0.4rem;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: $border-color;
+    transform: rotate(-45deg) translate(5px, 2px);
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 2vh;
+}
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@import './partials/header';
+@import './partials/team';
+@import './partials/cases';
+@import './partials/clients';
+@import './partials/publications';
+@import './partials/footer';
+@import './partials/services';
+@import './partials/experience';
