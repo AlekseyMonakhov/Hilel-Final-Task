@@ -96,5 +96,12 @@
         &__description__container {
             padding: 40px;
         }
+        .switch {
+            column-gap: 0.5vw;
+            span {
+                width: 1.2vw;
+                height: 1.2vw;
+            }
+        }
     }
 }

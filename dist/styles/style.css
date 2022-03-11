@@ -438,6 +438,13 @@ body {
   .team__description__container {
     padding: 40px;
   }
+  .team .switch {
+    column-gap: 0.5vw;
+  }
+  .team .switch span {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
 }
 .case {
   padding: 30px 20px;
