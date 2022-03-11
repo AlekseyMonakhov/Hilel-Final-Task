@@ -215,7 +215,7 @@
             column-gap: 1vw;
             margin-bottom: 2vh;
             &__languages {
-                gap: 5px;
+                gap: 0.5vw;
             }
             &__adress {
                 display: block;
@@ -273,6 +273,7 @@
             width: 3vw;
             height: 3vw;
             border: 0.1vw solid rgba(250, 250, 250, 0.5);
+            bottom: 3vh;
         }
     }
     .mobile-menu-button {

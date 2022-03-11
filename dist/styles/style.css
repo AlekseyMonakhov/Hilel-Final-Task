@@ -236,7 +236,7 @@ body {
     margin-bottom: 2vh;
   }
   .header__content .info__languages {
-    gap: 5px;
+    gap: 0.5vw;
   }
   .header__content .info__adress {
     display: block;
@@ -304,6 +304,7 @@ body {
     width: 3vw;
     height: 3vw;
     border: 0.1vw solid rgba(250, 250, 250, 0.5);
+    bottom: 3vh;
   }
 
   .mobile-menu-button {
