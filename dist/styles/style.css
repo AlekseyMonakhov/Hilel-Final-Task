@@ -577,16 +577,13 @@ body {
 }
 
 @media (min-width: 800px) {
-  .clients__container {
-    width: 100vw;
-  }
   .clients__title {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 3vh;
   }
   .clients__card {
-    width: 25vw;
+    width: 25%;
     height: 12vh;
   }
   .clients__img {
@@ -737,7 +734,7 @@ body {
   .publications__description::after {
     height: 0.4rem;
     width: 0.4rem;
-    transform: translateY(-25%) rotate(-45deg);
+    transform: translateY(-25%) rotate(-45degs);
   }
   .publications__cards {
     flex-flow: column wrap;
