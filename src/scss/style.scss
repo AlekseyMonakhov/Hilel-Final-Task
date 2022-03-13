@@ -9,7 +9,7 @@ $screenWidth: 800px;
     margin-#{$marginDirection}: 1vw;
     transform: translate(0px, -40%);
 }
-@mixin descriptionAfter ($border-color)gut {
+@mixin descriptionAfter ($border-color) {
     content: "";
     display: inline-block;
     height: 0.4rem;    
