@@ -357,12 +357,12 @@ body {
 .team__description::after {
   content: "";
   display: inline-block;
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.5rem;
+  width: 0.5rem;
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-color: #24A3FF;
-  transform: rotate(-45deg) translate(5px, 2px);
+  transform: rotate(-45deg) translate(50%, -15%);
 }
 .team__heading {
   font-size: 32px;
@@ -995,12 +995,12 @@ body {
 .experienceServices .services__description::after {
   content: "";
   display: inline-block;
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.5rem;
+  width: 0.5rem;
   border-right: 2px solid;
   border-bottom: 2px solid;
   border-color: #FFFFFF;
-  transform: rotate(-45deg) translate(5px, 2px);
+  transform: rotate(-45deg) translate(50%, -15%);
 }
 .experienceServices .services__cards {
   display: flex;
