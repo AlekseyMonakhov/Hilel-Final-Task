@@ -211,7 +211,7 @@ body {
   z-index: 4;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .header__content {
     height: 100vh;
   }
@@ -404,7 +404,7 @@ body {
   opacity: 1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .team {
     padding: 40px 60px;
   }
@@ -480,7 +480,7 @@ body {
   color: #F0145A;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .case {
     padding: 0 60px 30px;
   }
@@ -584,7 +584,7 @@ body {
   max-height: 75%;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .clients__title {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -725,7 +725,7 @@ body {
   padding: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .publications {
     padding: 2vh 2vw 0;
   }
@@ -890,7 +890,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .footer__container {
     min-height: 15vh;
     flex-flow: row wrap;
@@ -1046,7 +1046,7 @@ body {
   border-radius: 0px 0px 12px 12px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .experienceServices__container {
     padding: 60px;
   }
@@ -1129,7 +1129,7 @@ body {
   color: #FFFFFF;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   .experience {
     padding: 80px 60px;
     flex-flow: row nowrap;
